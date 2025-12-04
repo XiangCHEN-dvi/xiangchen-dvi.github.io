@@ -9,56 +9,25 @@ redirect_from:
 
 {% include base_path %}
 
+Work Experience
+======
+* 2025.11-Now: Researcher, Beijing Zhongguancun Academy
+* 2025.09-2025.11: Researcher, Multimodal Model Lab, Huawei
+* 2017.07-2025.08: Researcher, Decisioning and Reasoning Lab, Huawei
+  * 2023.06-2025.02: Project Leader, Network Mind Team
+  * 2020.06-2023.06: Project Manager, CSTT Project "Neural Physics Engines"
+  * 2018.01-2019.03: Expatriate, Huawei France Research Center
+
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D, Department of Electronic Engineering, Tsinghua University, 2012-2017
+  * Resource Allocation and Optimal Scheduling in Communication Systems
+  * 2015.10-2016.04: Visiting Scholar, Ohio State University
+* B.S., Department of Electronic Engineering, Tsinghua University, 2008-2012
+  * Score Ranking 22 / 243, Postgraduate Recommendation Ranking 4 / 120
+  * Outstanding Graduates (top 10%), Outstanding Thesis
+  * 2010 & 2011, Academic Excellence Scholarship
 
-Work experience
+Academic Servives
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
-
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
-
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* Reviewer: ICML (2022-), NeurIPS (2022-), ICLR(2023-)
