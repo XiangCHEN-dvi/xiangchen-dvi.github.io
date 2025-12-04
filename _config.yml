@@ -24,7 +24,7 @@ repository               : "XiangCHEN-dvi/xiangchen-dvi.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Xiang CHEN"
+  name             : "Xiang CHEN (陈祥)"
   pronouns         : # example: "she/her"  
   bio              : "AI for Physical Simulation and Inverse Design"
   location         : "Beijing, China"
@@ -80,7 +80,7 @@ author:
   wikipedia        : # Username
   xing             : # Username
   youtube          : # Username
-  zhihu            : "伪小人"
+  zhihu            : "weixiaoren"
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
