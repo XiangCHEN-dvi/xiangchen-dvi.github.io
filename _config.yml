@@ -3,7 +3,7 @@
 # This config file is meant for settings that affect your entire site, values
 # which you are expected to set up once and rarely need to edit after that.
 # For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve -l -H localhost`. If you change this file, please restart the 
+# `jekyll serve -l -H localhost`. If you change this file, please restart the
 # server process.
 
 # Basic Site Settings
@@ -13,7 +13,7 @@ title                    : "Xiang CHEN's Homepage"
 title_separator          : "-"
 name                     : &name "Xiang CHEN"
 description              : &description "Your Name's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
-url                      : https://xiangchen-dvi.github.io/ # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
+url                      : https://xiangchen-dvi.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                             # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "XiangCHEN-dvi/xiangchen-dvi.github.io"
@@ -25,12 +25,12 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "Xiang CHEN (陈祥)"
-  pronouns         : # example: "she/her"  
+  pronouns         : # example: "she/her"
   bio              : "AI for Physical Simulation and Inverse Design"
   location         : "Beijing, China"
   employer         : "Zhongguancun Academy"
   uri              : # URL
-  email            : "xiangchen.ai@outlook.com" 
+  email            : "xiangchen.ai@outlook.com"
 
   # Academic websites
   academia         : # URL
@@ -52,8 +52,8 @@ author:
   codepen          : # Username
   dribbble         : # Username
   github           : "XiangCHEN-dvi"
-  kaggle           : # Username  
-  stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
+  kaggle           : # Username
+  stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")
 
   # Social media
   artstation       : # Username
@@ -87,7 +87,7 @@ publication_category:
   books:
     title: 'Books'
   manuscripts:
-    title: 'Journal Articles'    
+    title: 'Journal Articles'
   conferences:
     title: 'Conference Papers'
 
