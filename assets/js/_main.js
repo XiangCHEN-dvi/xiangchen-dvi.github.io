@@ -47,6 +47,48 @@ var toggleTheme = () => {
   setTheme(new_theme);
 };
 
+let determineLang = () => {
+  const lang = localStorage.getItem("lang");
+  return lang === "zh" ? "zh" : "en";
+};
+
+let updateNavLabels = (lang) => {
+  $("a[data-title-en][data-title-zh]").each(function () {
+    const label = lang === "zh" ? $(this).data("title-zh") : $(this).data("title-en");
+    $(this).text(label);
+  });
+};
+
+let setLang = (lang) => {
+  const useLang = lang === "zh" ? "zh" : "en";
+  localStorage.setItem("lang", useLang);
+  $("html").attr("data-lang", useLang);
+  $("html").attr("lang", useLang);
+  updateNavLabels(useLang);
+};
+
+window.positionLangToggle = () => {
+  const langToggle = document.querySelector("#lang-toggle");
+  const nav = document.querySelector(".greedy-nav");
+  const content = document.querySelector("#main .page__content, #main .archive");
+  if (!langToggle || !nav || !content) {
+    return;
+  }
+
+  const navRect = nav.getBoundingClientRect();
+  const contentRect = content.getBoundingClientRect();
+  let rightOffset = navRect.right - contentRect.right;
+
+  const hamburger = document.querySelector(".greedy-nav__toggle:not(.hidden)");
+  if (hamburger) {
+    const hamburgerRect = hamburger.getBoundingClientRect();
+    const minOffset = navRect.right - hamburgerRect.left + 8;
+    rightOffset = Math.max(rightOffset, minOffset);
+  }
+
+  langToggle.style.right = `${Math.max(0, rightOffset)}px`;
+};
+
 /* ==========================================================================
    Plotly integration script so that Markdown codeblocks will be rendered
    ========================================================================== */
@@ -99,8 +141,13 @@ $(document).ready(function () {
           }
         });
 
-  // Enable the theme toggle
-  $('#theme-toggle').on('click', toggleTheme);
+  // Enable the language toggle
+  setLang(determineLang());
+  window.positionLangToggle();
+  $(window).on("load", window.positionLangToggle);
+  $("#lang-toggle .lang-switch").on("click", function () {
+    setLang(determineLang() === "zh" ? "en" : "zh");
+  });
 
   // Enable the sticky footer
   var bumpIt = function () {

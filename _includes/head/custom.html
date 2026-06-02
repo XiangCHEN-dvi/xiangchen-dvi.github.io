@@ -14,4 +14,13 @@
 <link rel="icon" href="/images/favicon.ico"/>
 <meta name="theme-color" content="#ffffff"/>
 
+<script>
+  (function () {
+    if (localStorage.getItem("lang") === "zh") {
+      document.documentElement.setAttribute("data-lang", "zh");
+      document.documentElement.lang = "zh";
+    }
+  })();
+</script>
+
 <!-- end custom head snippets -->

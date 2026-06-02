@@ -6,16 +6,27 @@
 */
 
 var $nav = $('#site-nav');
-var $btn = $('#site-nav button');
+var $btn = $('#site-nav .greedy-nav__toggle');
+var $langToggle = $('#lang-toggle');
 var $vlinks = $('#site-nav .visible-links');
-var $vlinks_persist_tail = $vlinks.children("*.persist.tail");
 var $hlinks = $('#site-nav .hidden-links');
 
 var breaks = [];
 
 function updateNav() {
 
-  var availableSpace = $btn.hasClass('hidden') ? $nav.width() : $nav.width() - $btn.width() - 30;
+  if (typeof window.positionLangToggle === "function") {
+    window.positionLangToggle();
+  }
+
+  var langToggleReserve = 0;
+  if ($langToggle.length) {
+    var navRect = $nav[0].getBoundingClientRect();
+    var langRect = $langToggle[0].getBoundingClientRect();
+    langToggleReserve = navRect.right - langRect.left + 8;
+  }
+  var toggleBtnWidth = $btn.hasClass('hidden') ? 0 : $btn.outerWidth(true);
+  var availableSpace = $nav.width() - langToggleReserve - toggleBtnWidth;
 
   // The visible list is overflowing the nav
   if ($vlinks.width() > availableSpace) {
@@ -27,7 +38,13 @@ function updateNav() {
       // Move item to the hidden list
       $vlinks.children("*:not(.persist)").last().prependTo($hlinks);
 
-      availableSpace = $btn.hasClass("hidden") ? $nav.width() : $nav.width() - $btn.width() - 30;
+      toggleBtnWidth = $btn.hasClass('hidden') ? 0 : $btn.outerWidth(true);
+      if ($langToggle.length) {
+        var navRect = $nav[0].getBoundingClientRect();
+        var langRect = $langToggle[0].getBoundingClientRect();
+        langToggleReserve = navRect.right - langRect.left + 8;
+      }
+      availableSpace = $nav.width() - langToggleReserve - toggleBtnWidth;
 
       // Show the dropdown btn
       $btn.removeClass("hidden");
@@ -39,11 +56,7 @@ function updateNav() {
     // There is space for another item in the nav
     while (breaks.length > 0 && availableSpace > breaks[breaks.length - 1]) {
       // Move the item to the visible list
-      if ($vlinks_persist_tail.children().length > 0) {
-        $hlinks.children().first().insertBefore($vlinks_persist_tail);
-      } else {
-        $hlinks.children().first().appendTo($vlinks);
-      }
+      $hlinks.children().first().appendTo($vlinks);
       breaks.pop();
     }
 

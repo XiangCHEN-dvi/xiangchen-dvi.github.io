@@ -1,0 +1,122 @@
+/* ==========================================================================
+   SITE CUSTOMIZATIONS
+   ========================================================================== */
+
+$body-text-serif: Georgia, "Times New Roman", Times, "Songti SC", "Noto Serif SC", serif;
+
+#main {
+  .archive,
+  .page__content,
+  .cv-container {
+    font-size: 0.8em;
+    font-family: $body-text-serif;
+
+    table {
+      font-size: inherit;
+      font-family: $body-text-serif;
+
+      th,
+      td {
+        font-family: inherit;
+      }
+    }
+  }
+
+  .archive img {
+    display: block;
+    max-width: min(100%, 42rem);
+    height: auto;
+    margin: 1em auto;
+  }
+}
+
+html[data-lang="zh"] .lang-en {
+  display: none !important;
+}
+
+html:not([data-lang="zh"]) .lang-zh {
+  display: none !important;
+}
+
+.greedy-nav {
+  #lang-toggle {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 101;
+    white-space: nowrap;
+  }
+
+  .lang-switch {
+    display: inline-flex;
+    align-items: stretch;
+    gap: 0;
+    border: 1px solid color-mix(in srgb, var(--global-border-color) 25%, var(--global-text-color));
+    border-radius: 4px;
+    padding: 0;
+    background: var(--global-bg-color);
+    overflow: hidden;
+    line-height: 1;
+    isolation: isolate;
+    cursor: pointer;
+  }
+
+  .lang-switch__btn {
+    position: relative;
+    height: auto;
+    z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    visibility: visible;
+    border: none;
+    margin: 0;
+    padding: 0.28em 0.58em;
+    background: transparent;
+    color: var(--global-text-color-light);
+    font-family: inherit;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    line-height: 1.3;
+    cursor: pointer;
+    transition: color 0.22s ease;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      opacity: 0;
+      transition: opacity 0.22s ease, background 0.22s ease;
+    }
+
+    &:hover {
+      color: var(--global-masthead-link-color-hover);
+    }
+  }
+}
+
+html:not([data-lang="zh"]) #lang-toggle .lang-switch__btn[data-lang="en"],
+html[data-lang="zh"] #lang-toggle .lang-switch__btn[data-lang="zh"] {
+  color: #fff;
+
+  &::before {
+    opacity: 1;
+    background: color-mix(in srgb, var(--global-link-color) 78%, #000);
+  }
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+html:not([data-lang="zh"]) #lang-toggle .lang-switch__btn[data-lang="en"]::before {
+  transform: none;
+  clip-path: polygon(0 0, 100% 0, calc(100% - 0.45em) 100%, 0 100%);
+}
+
+html[data-lang="zh"] #lang-toggle .lang-switch__btn[data-lang="zh"]::before {
+  transform: none;
+  clip-path: polygon(0.45em 0, 100% 0, 100% 100%, 0 100%);
+}
