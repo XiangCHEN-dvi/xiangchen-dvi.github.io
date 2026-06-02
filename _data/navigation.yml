@@ -21,9 +21,9 @@ main:
     title_zh: "论文"
     url: /publications/
 
-  # - title: "Presentations"
-  #   title_zh: "报告"
-  #   url: /presentations/
+  - title: "Presentations"
+    title_zh: "报告"
+    url: /presentations/
 
   - title: "Portfolios"
     title_zh: "项目"
