@@ -29,7 +29,7 @@ author_profile: true
   Feng Zhao, **Xiang Chen**, Jun Wang, Zuoqiang Shi, and Shao-Lun Huang.<br>
   In The Symbiosis of Deep Learning and Differential Equations, NeurIPS 2021 Workshop. 2021.
 
-=========
+-------
 
 - Delay-Optimal Buffer-Aware Scheduling with Adaptive Transmission.<br>
   **Xiang Chen**, Wei Chen, Joohyun Lee, and Ness B Shroff.<br>
