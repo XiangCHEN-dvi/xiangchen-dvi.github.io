@@ -29,7 +29,8 @@ Education
 
 Academic Services
 ======
-* Reviewer: ICML (2022-), NeurIPS (2022-), ICLR(2023-)
+* Reviewer: ICML (2022-), NeurIPS (2022-), ICLR (2023-2026)
+* AC: ICLR (2026-)
 
 </div>
 
@@ -55,6 +56,7 @@ Academic Services
 
 学术服务
 ======
-* 审稿人：ICML (2022-)、NeurIPS (2022-)、ICLR (2023-)
+* 审稿人：ICML (2022-)、NeurIPS (2022-)、ICLR (2023-2026)
+* 领域主席：ICLR (2026-)
 
 </div>

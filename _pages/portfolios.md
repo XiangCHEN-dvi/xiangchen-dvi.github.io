@@ -9,8 +9,14 @@ author_profile: true
 
 <div class="lang-en" markdown="1">
 
+# Frameworks and Agents
+
+- [SPERM](https://xiangchen-dvi.github.io/SPERM/): Shape-Prior-Embedded Regression Models.
+- [differentiable-model-zoo](https://arxiv.org/pdf/2609.13819): A zoo for differentiable physics models.
+
 # Tools and Benchmarks
 
+- [numerical-diff](https://xiangchen-dvi.github.io/numerical-diff/): Numerical program differencing via value-based trace alignment and intervention.
 - [3Dio](https://github.com/XiangCHEN-dvi/3Dio) (Under Construction): Format conversion between different 3D formats.
 - [Ramanujan Dataset](https://github.com/XiangCHEN-dvi/Ramanujan-Dataset) (Under Construction): A structured collection of Srinivasa Ramanujan's mathematical results.
 
@@ -29,8 +35,14 @@ author_profile: true
 
 <div class="lang-zh" markdown="1">
 
+# 框架与智能体
+
+- [SPERM](https://xiangchen-dvi.github.io/SPERM/)：形状先验嵌入的机器学习回归模型。
+- [differentiable-model-zoo](https://arxiv.org/pdf/2609.13819)：可微分物理模型 model zoo。
+
 # 工具与数据集
 
+- [numerical-diff](https://xiangchen-dvi.github.io/numerical-diff/)：基于运行轨迹数值干预和对齐的数值程序diff工具。
 - [3Dio](https://github.com/XiangCHEN-dvi/3Dio)（建设中）：3D 数据格式间的相互转化工具。
 - [Ramanujan Dataset](https://github.com/XiangCHEN-dvi/Ramanujan-Dataset)（建设中）：jsonl 格式的拉马努金的数学成果汇总。
 

@@ -13,7 +13,7 @@ redirect_from:
 # Researcher at Zhongguancun Academy
 My current research interests include:
 - AI-driven 3D geometric representations, data-physics hybrid modeling, and their applications in 2C (world models) and 2B (CAD/CAE) scenarios, including surrogate simulators, generative models, and inverse design (3D reconstruction, PDE-constrained optimization)
-- STEM foundation models, multi-modal models for STEM
+- STEM foundation models, multi-modal models, generative models and inverse design
 - Physics of AI
 
 # 2017–2025, Huawei Noah's Ark Lab
@@ -80,7 +80,7 @@ From a research perspective, we proposed the first learning-based end-to-end PDE
 # 现任北京中关村学院研究员
 目前的研究兴趣包括：
 - AI 驱动的三维几何表征、数据与机理混合驱动的物理建模，及其在2C（世界模型）与2B（CAD/CAE）场景中的应用，包括代理仿真器、生成模型与逆向设计（三维重建、PDE约束优化）
-- STEM 基础模型、面向 STEM 的多模态模型
+- STEM 基础模型、多模态模型、生成模型、逆向设计
 - Physics of AI
 
 # 2017-2025年，曾就职于华为诺亚方舟实验室
